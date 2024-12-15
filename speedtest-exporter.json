@@ -92,7 +92,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "speedtest_download_bytes*8",
+          "expr": "speedtest_download_bytes_per_seconds*8",
           "interval": "",
           "intervalFactor": 1,
           "legendFormat": "Download Speed",
@@ -183,7 +183,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "speedtest_upload_bytes*8",
+          "expr": "speedtest_upload_bytes_per_seconds*8",
           "legendFormat": "Upload Speed",
           "refId": "A"
         }
@@ -273,7 +273,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "speedtest_jittter_seconds",
+          "expr": "speedtest_jittter_milliseconds",
           "format": "time_series",
           "instant": false,
           "intervalFactor": 1,
@@ -370,7 +370,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "speedtest_latency_seconds",
+          "expr": "speedtest_latency_milliseconds",
           "legendFormat": "Latency",
           "refId": "A"
         }
